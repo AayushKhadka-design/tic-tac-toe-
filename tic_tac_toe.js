@@ -7,6 +7,16 @@ let winCond = [[0,1,2],[3,4,5],[6,7,8],
 let btn = document.querySelectorAll(".box");
 let msg_section = document.querySelector(".msg");
 let p = document.createElement("p");
+let play_again = document.getElementById("play_again");
+play_again.addEventListener("click",()=>{
+    btn.forEach(element => {
+    element.textContent = "" ;
+    element.disabled = false;
+    msg_section.innerText  =""
+    turnO = true;
+   element.classList.remove("boxO", "boxX")
+    });
+})
 btn.forEach(element => {
    
     element.addEventListener("click",()=>{
@@ -65,12 +75,3 @@ function checkDraw(){
     return true;
 }
 
-let play_again = document.getElementById("play_again");
-play_again.addEventListener("click",()=>{
-    btn.forEach(element => {
-    element.textContent = "" ;
-    element.disabled = false;
-    msg_section.innerText  =""
-    turnO = true;
-    });
-})
