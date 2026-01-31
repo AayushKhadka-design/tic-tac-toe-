@@ -71,6 +71,6 @@ play_again.addEventListener("click",()=>{
     element.textContent = "" ;
     element.disabled = false;
     msg_section.innerText  =""
-    trunO = true;
+    turnO = true;
     });
 })
