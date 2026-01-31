@@ -3,7 +3,7 @@ let winCond = [[0,1,2],[3,4,5],[6,7,8],
                [0,4,8],[2,4,6]]
 
                let turnO = true;
-               let trunX = false;
+            
 let btn = document.querySelectorAll(".box");
 let msg_section = document.querySelector(".msg");
 let p = document.createElement("p");
@@ -71,5 +71,6 @@ play_again.addEventListener("click",()=>{
     element.textContent = "" ;
     element.disabled = false;
     msg_section.innerText  =""
+    let  trunO = true;
     });
 })
